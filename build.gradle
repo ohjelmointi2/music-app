@@ -27,11 +27,14 @@ dependencies {
 
     // This dependency is used by the application.
     implementation 'com.google.guava:guava:31.1-jre'
+
+    // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+    implementation 'org.xerial:sqlite-jdbc:3.42.0.0'
 }
 
 application {
     // Define the main class for the application.
-    mainClass = 'gradle.template.App'
+    mainClass = 'music.App'
 }
 
 tasks.named('test') {
